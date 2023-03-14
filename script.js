@@ -1,5 +1,6 @@
 console.log("hellow developers");
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  document.querySelector('#c1').addEventListener('click',function(){
     document.getElementById("c1").style.backgroundColor = "black";
     document.getElementById("c1").style.scale = "1.5";
