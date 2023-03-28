@@ -17,7 +17,7 @@ html,body{
     top: 0%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
-    background-color: #FE385B;
+    background-color: #fe385cbd;
     z-index: 9999999999;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
 }
