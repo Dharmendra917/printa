@@ -9,6 +9,18 @@ html,body{
     background-color: white;
     padding: 0% 1%;
 }
+#circle{
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #FE385B;
+    z-index: 9999999999;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
 #main{
     padding: 0 2%;
     /* background-color: red;*/

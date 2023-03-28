@@ -1,5 +1,19 @@
 console.log("hellow developers");
 
+var circle = document.querySelector("#circle");
+
+window.addEventListener("mousemove",function(dets){
+   // circle.style.transform = `translate(${dets.clientX}px,${dets.clientY}px)`;
+   // console.log(dets.clientX,dets.clientY)
+   gsap.to(circle,{
+      x: dets.clientX,
+      y: dets.clientY,
+      duration: .3,
+      ease: Expo
+   })
+})
+
+
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  document.querySelector('#c1').addEventListener('click',function(){
     document.getElementById("c1").style.backgroundColor = "black";
