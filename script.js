@@ -66,7 +66,7 @@ window.addEventListener("mousemove",function(dets){
 
  //====================================================================
  //=======----Nav_Button_Effect---=====================================
- document.getElementById("nbtn").addEventListener('mouseover',function(){
+ document.getElementById("nbtn").addEventListener('mousemove',function(){
 
     gsap.to(".ci1,.ci2",{
         left: "30%",
@@ -79,12 +79,18 @@ window.addEventListener("mousemove",function(dets){
   })
 
  })
- document.querySelector("#nbtn").addEventListener('mouseout',function(){
+ document.querySelector("#nbtn").addEventListener('mouseleave',function(){
 
-   //=============INCOMPLETE-------------
-    document.querySelector(".ci1").style.background = "#EF1C55";
-    document.querySelector(".ci2").style.background = "#EF1C55";
-
+   gsap.to(".ci1,.ci2",{
+      left: "0%",
+      duration: .4,
+      scale: 0,
+  })
+  gsap.to(".ci2",{
+    scale: 0,
+    delay: .6,
+    left: "-10%"
+})
 })
 
  var mbtn = document.querySelector(".mbtn").addEventListener('mouseover',function(){
